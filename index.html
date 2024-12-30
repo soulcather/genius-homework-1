@@ -10,34 +10,36 @@
   <body>
     <header>
       <div class="container">
-        <nav>
-          <a class="logo-link" href="#">beauty zone</a>
-          <ul>
-            <li>
-              <a class="navigation-link" href="#section-about_us">Про нас</a>
-            </li>
-            <li>
-              <a class="navigation-link" href="#section-choose_us">Чому ми</a>
-            </li>
-            <li>
-              <a class="navigation-link" href="#section-procedures"
-                >Наші процедури</a
-              >
-            </li>
-            <li>
-              <a class="navigation-link" href="#section-location">Контакти</a>
-            </li>
-            <li>
-              <a href="#"> <!-- call icon --></a>
-            </li>
-            <li>
-              <a href="#"> <!-- facebook icon --></a>
-            </li>
-            <li>
-              <a href="#"> <!-- instagram icon --></a>
-            </li>
-          </ul>
-        </nav>
+        <div class="header-container">
+          <nav class="header-nav">
+            <a class="logo-link" href="#">beauty zone</a>
+            <ul class="header-menu">
+              <li>
+                <a class="navigation-link" href="#section-about_us">Про нас</a>
+              </li>
+              <li>
+                <a class="navigation-link" href="#section-choose_us">Чому ми</a>
+              </li>
+              <li>
+                <a class="navigation-link" href="#section-procedures"
+                  >Наші процедури</a
+                >
+              </li>
+              <li>
+                <a class="navigation-link" href="#section-location">Контакти</a>
+              </li>
+              <li>
+                <a href="#"> <!-- call icon --></a>
+              </li>
+              <li>
+                <a href="#"> <!-- facebook icon --></a>
+              </li>
+              <li>
+                <a href="#"> <!-- instagram icon --></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -53,75 +55,95 @@
       </section>
       <section class="section about_us-section" id="section-about_us">
         <div class="container">
-          <h2 class="section-title about-us-title">
-            Перевтілюйтесь в <span>Beauty Zone!</span>
-          </h2>
-          <p class="about_us-text">
-            Наша косметологічна клініка пропонує вам професійні послуги з
-            догляду за шкірою обличчя та тіла.
-          </p>
-          <p class="about_us-text">
-            B <span>beauty zone</span> ми гарантуємо найвищі стандарти якості та
-            приємний сервіс. Наші косметологічні процедури та препарати
-            допоможуть вам підтримувати свою красу та молодість. З нами краса
-            назавжди!
-          </p>
+          <div class="about_us-container">
+            <div class="about_us-text-wrapper">
+              <h2 class="section-title about-us-title">
+                Перевтілюйтесь в <span>Beauty Zone!</span>
+              </h2>
+              <p class="about_us-text">
+                Наша косметологічна клініка пропонує вам професійні послуги з
+                догляду за шкірою обличчя та тіла.
+              </p>
+              <p class="about_us-text">
+                B <span>beauty zone</span> ми гарантуємо найвищі стандарти
+                якості та приємний сервіс. Наші косметологічні процедури та
+                препарати допоможуть вам підтримувати свою красу та молодість. З
+                нами краса назавжди!
+              </p>
+            </div>
+            <div class="about_us-img-wrapper">
+              <img
+                src="./img/face_1.jpg"
+                alt="Обличчя жінки під час процедур"
+              />
+              <img
+                src="./img/face_2.jpg"
+                alt="Обличчя жінки під час процедур"
+              />
+            </div>
+          </div>
         </div>
       </section>
       <section class="section" id="section-choose_us">
         <div class="container">
-          <h2 class="section-title">Чому люди <span>обирають нас</span></h2>
-          <ul>
-            <li>
-              <article>
-                <a href="#"><!-- icon call --></a>
-                <p class="choose_us-text">
-                  Всі наші косметологи мають вищу медичну освіту та стаж роботи
-                  від 5 років
-                </p>
-              </article>
-            </li>
-            <li>
-              <article>
-                <a href="#"><!-- icon facebook--></a>
-                <p class="choose_us-text">
-                  Використовуємо тільки професійне обладнання та косметику,
-                  перевірену часом
-                </p>
-              </article>
-            </li>
-            <li>
-              <article>
-                <a href="#"><!-- icon instagram--></a>
-                <p class="choose_us-text">
-                  Наша мета - підкреслити переваги та приховати недоліки, а не
-                  переробити
-                </p>
-              </article>
-            </li>
-          </ul>
+          <h2 class="section-title choose_us-centered">
+            Чому люди <span>обирають нас</span>
+          </h2>
+          <div class="choose_us-container">
+            <ul class="choose_us-list">
+              <li class="choose_us-item">
+                <article class="choose_us-card">
+                  <a href="#"><!-- icon call --></a>
+                  <p class="choose_us-text">
+                    Всі наші косметологи мають вищу медичну освіту та стаж
+                    роботи від 5 років
+                  </p>
+                </article>
+              </li>
+              <li class="choose_us-item">
+                <article class="choose_us-card">
+                  <a href="#"><!-- icon facebook--></a>
+                  <p class="choose_us-text">
+                    Використовуємо тільки професійне обладнання та косметику,
+                    перевірену часом
+                  </p>
+                </article>
+              </li>
+              <li class="choose_us-item">
+                <article class="choose_us-card">
+                  <a href="#"><!-- icon instagram--></a>
+                  <p class="choose_us-text">
+                    Наша мета - підкреслити переваги та приховати недоліки, а не
+                    переробити
+                  </p>
+                </article>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="section" id="section-procedures">
         <div class="container">
-          <h2 class="section-title">Наші <span>процедури</span></h2>
-          <ul>
-            <li>
-              <article>
+          <h2 class="section-title pocedures-centered">
+            Наші <span>процедури</span>
+          </h2>
+          <ul class="procedures-list">
+            <li class="procedures-item">
+              <article class="procedures-card">
                 <!-- img -->
-                <p class="procedures-text">Маски для обличчя</p>
+                <h3 class="procedures-text">Маски для обличчя</h3>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="procedures-item">
+              <article class="procedures-card">
                 <!-- img -->
-                <p class="procedures-text">Маски для обличчя</p>
+                <h3 class="procedures-text">Маски для обличчя</h3>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="procedures-item">
+              <article class="procedures-card">
                 <!-- img -->
-                <p class="procedures-text">Маски для обличчя</p>
+                <h3 class="procedures-text">Маски для обличчя</h3>
               </article>
             </li>
           </ul>
@@ -129,7 +151,9 @@
       </section>
       <section class="section" id="section-location">
         <div class="container">
-          <h2 class="section-title">Як нас <span>знайти</span></h2>
+          <h2 class="section-title location-title-centered">
+            Як нас <span>знайти</span>
+          </h2>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.939883433875!2d30.51325798977685!3d50.44222041471427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1735050730243!5m2!1sru!2sua"
             width="605"

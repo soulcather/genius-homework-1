@@ -17,6 +17,10 @@ body {
   font-weight: 400;
   line-height: 1.3;
   margin: 0;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: -400px 400px; */
 }
 
 a {
@@ -38,6 +42,8 @@ address {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -53,6 +59,23 @@ ul {
 }
 
 /* Header */
+.header-container {
+  padding: 42px 100px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 56px;
+  flex-grow: 1;
+  justify-content: center;
+}
 
 .logo-link {
   color: var(--color-brand-blue);
@@ -73,7 +96,7 @@ ul {
 
 .navigation-link:hover {
   color: var(--color-brand-blue);
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 /* Main */
@@ -81,6 +104,10 @@ ul {
 /* Hero section */
 .hero-section {
   padding: 126px 0;
+  background-image: url(../img/hero-section-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
 }
 
 .hero-text {
@@ -145,6 +172,11 @@ ul {
   margin-bottom: 40px;
 }
 
+.about_us-container {
+  display: flex;
+  gap: 40px;
+}
+
 .about_us-text {
   font-size: 22px;
   line-height: 1.7;
@@ -157,20 +189,88 @@ ul {
 }
 
 /* Section choose_us */
+.section-title.choose_us-centered {
+  text-align: center;
+  width: 450px;
+  height: 150px;
+  margin: 0 auto 50px;
+}
+
+.choose_us-container {
+  display: flex;
+}
+
+.choose_us-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.choose_us-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.choose_us-card {
+  padding: 24px 32px;
+  border: 1px solid black;
+  border-radius: 32px;
+  height: 180px;
+  display: flex;
+}
 
 .choose_us-text {
   color: var(--color-brand-dark);
+  text-align: center;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
 }
 
 /* Section Procedures */
+.section-title.pocedures-centered {
+  text-align: center;
+}
+
+.procedures-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.procedures-item {
+  display: flex;
+  flex-basis: calc((100% - 40px) / 3);
+  justify-content: center;
+}
+
+.procedures-card {
+  padding: 24px;
+  border: 1px solid black;
+  border-radius: 4px 120px 4px 120px;
+  height: 455px;
+  width: 345px;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+    180deg,
+    rgba(10, 44, 213, 0) 55.21%,
+    rgba(14, 84, 225, 0.71) 72.92%,
+    var(--color-primary-blue) 100%
+  );
+}
 
 .procedures-text {
   color: var(--color-primary-light);
   font-size: 22px;
   line-height: 1.2;
+  display: flex;
+  align-items: end;
 }
 
 /* Section Location */
+.section-title.location-title-centered {
+  text-align: center;
+}
+
 .location-text {
   color: var(--color-primary-light);
   font-family: 'Roboto';
@@ -218,4 +318,7 @@ ul {
 
 footer {
   background-color: #011c44;
+  background-image: url(../img/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
