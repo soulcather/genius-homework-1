@@ -99,6 +99,16 @@ ul {
   /* font-weight: 700; */
 }
 
+.header-menu-icons {
+  display: flex;
+  gap: 32px;
+  fill: var(--color-primary-blue);
+}
+
+.header-menu-icons .menu-icon:hover {
+  fill: var(--color-brand-blue);
+}
+
 /* Main */
 
 /* Hero section */
@@ -188,6 +198,11 @@ ul {
   font-weight: 600;
 }
 
+.about_us-img {
+  /* border: 1px solid black; */
+  border-radius: 50%;
+}
+
 /* Section choose_us */
 .section-title.choose_us-centered {
   text-align: center;
@@ -266,6 +281,22 @@ ul {
   align-items: end;
 }
 
+/* Carousel button */
+
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background-color: transparent;
+  fill: var(--color-brand-dark);
+  border: 1px solid var(--color-brand-dark);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 /* Section Location */
 .section-title.location-title-centered {
   text-align: center;
@@ -321,4 +352,13 @@ footer {
   background-image: url(../img/footer-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.footer-menu-icons {
+  display: flex;
+  fill: var(--color-primary-light);
+}
+
+.footer-menu-icons .menu-icon:hover {
+  fill: var(--color-brand-blue);
 }

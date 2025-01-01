@@ -12,7 +12,9 @@
       <div class="container">
         <div class="header-container">
           <nav class="header-nav">
-            <a class="logo-link" href="#">beauty zone</a>
+            <a class="logo-link" href="./index.html">
+              <img src="./img/logo.svg" alt="Логотип Beaty Zone" />
+            </a>
             <ul class="header-menu">
               <li>
                 <a class="navigation-link" href="#section-about_us">Про нас</a>
@@ -28,14 +30,28 @@
               <li>
                 <a class="navigation-link" href="#section-location">Контакти</a>
               </li>
+            </ul>
+            <ul class="header-menu-icons">
               <li>
-                <a href="#"> <!-- call icon --></a>
+                <a href="#">
+                  <svg class="menu-icon" width="32" height="32">
+                    <use href="./img/icons.svg#icon-call"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#"> <!-- facebook icon --></a>
+                <a href="#">
+                  <svg class="menu-icon" width="32" height="32">
+                    <use href="./img/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#"> <!-- instagram icon --></a>
+                <a href="#">
+                  <svg class="menu-icon" width="32" height="32">
+                    <use href="./img/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </nav>
@@ -73,10 +89,12 @@
             </div>
             <div class="about_us-img-wrapper">
               <img
+                class="about_us-img"
                 src="./img/face_1.jpg"
                 alt="Обличчя жінки під час процедур"
               />
               <img
+                class="about_us-img"
                 src="./img/face_2.jpg"
                 alt="Обличчя жінки під час процедур"
               />
@@ -127,6 +145,11 @@
           <h2 class="section-title pocedures-centered">
             Наші <span>процедури</span>
           </h2>
+          <button class="carousel-button" type="button">
+            <svg width="16" height="16">
+              <use href="./img/icons.svg#icon-Arrow"></use>
+            </svg>
+          </button>
           <ul class="procedures-list">
             <li class="procedures-item">
               <article class="procedures-card">
@@ -147,6 +170,11 @@
               </article>
             </li>
           </ul>
+          <button class="carousel-button" type="button">
+            <svg width="16" height="16">
+              <use href="./img/icons.svg#icon-Arrow"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="section" id="section-location">
@@ -222,21 +250,29 @@
                 >Україна, м. Київ, вул. Тараса Шевченка 5</a
               >
             </li>
-            <li>
-              <a href="#">
-                <!-- icon call -->
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <!-- icon facebook -->
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <!-- icon instagram -->
-              </a>
-            </li>
+            <ul class="footer-menu-icons">
+              <li>
+                <a href="#">
+                  <svg class="menu-icon" width="32" height="32">
+                    <use href="./img/icons.svg#icon-call"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="menu-icon" width="32" height="32">
+                    <use href="./img/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="menu-icon" width="32" height="32">
+                    <use href="./img/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </ul>
           <a class="address-link" href="#" target="_blank">
             Політика конфіденційності
