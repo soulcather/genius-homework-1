@@ -158,6 +158,7 @@ ul {
   font-size: 12px;
   line-height: 1.5;
   margin-bottom: 0px;
+  max-width: 250px;
 }
 
 /* section-about_us */
@@ -228,6 +229,7 @@ ul {
   padding: 24px 32px;
   border: 1px solid black;
   border-radius: 32px;
+  box-shadow: 1px 8px 5px 1px #a8c6f561;
   height: 180px;
   display: flex;
 }
@@ -243,6 +245,12 @@ ul {
 /* Section Procedures */
 .section-title.pocedures-centered {
   text-align: center;
+}
+
+.procedures-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }
 
 .procedures-list {
@@ -298,8 +306,23 @@ ul {
 }
 
 /* Section Location */
+.section.section-location {
+  padding-bottom: 94px;
+}
+
 .section-title.location-title-centered {
   text-align: center;
+}
+
+.location-container {
+  display: flex;
+  gap: 32px;
+}
+
+.location-map {
+  border: none;
+  border-radius: 32px;
+  flex-shrink: 0;
 }
 
 .location-text {
@@ -352,6 +375,29 @@ footer {
   background-image: url(../img/footer-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 56px 0;
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
 }
 
 .footer-menu-icons {
