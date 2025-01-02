@@ -400,11 +400,11 @@ footer {
   flex-grow: 1;
 }
 
-.footer-menu-icons {
+/* .footer-menu-icons {
   display: flex;
   fill: var(--color-primary-light);
 }
 
 .footer-menu-icons .menu-icon:hover {
   fill: var(--color-brand-blue);
-}
+} */
