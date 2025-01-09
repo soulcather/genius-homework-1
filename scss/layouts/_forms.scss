@@ -1,0 +1,39 @@
+.form {
+  &__field {
+    margin-bottom: 32px;
+    position: relative;
+  }
+
+  &__label {
+    position: absolute;
+    left: 42px;
+    top: 16px;
+  }
+
+  &__input {
+    color: var(--color-primary-light);
+    padding: 18px 32px;
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.17;
+    border: 2px solid var(--color-form-border);
+    border-radius: 32px;
+    background-color: transparent;
+  }
+
+  &__input:focus {
+    background-color: var(--color-form-border);
+    outline: none;
+  }
+
+  &__input::placeholder {
+    color: var(--color-primary-light);
+    font-size: 13px;
+    line-height: 1.17;
+  }
+
+  &__button {
+    margin: 0 auto 24px;
+    display: block;
+  }
+}

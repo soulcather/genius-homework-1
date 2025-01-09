@@ -1,0 +1,15 @@
+.section {
+  padding: 48px 0;
+
+  &__title {
+    color: var(--color-primary-blue);
+    font-family: 'Play';
+    font-size: 64px;
+    line-height: 1.2;
+    margin-bottom: 48px;
+
+    &--centered {
+      text-align: center;
+    }
+  }
+}

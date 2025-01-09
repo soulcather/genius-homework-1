@@ -13,6 +13,7 @@ body {
   background-size: contain;
   margin: 0;
   background-position: 0% 67%;
+  cursor: default;
 }
 
 a {
@@ -46,10 +47,6 @@ ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.section {
-  padding: 48px 0;
 }
 
 .container {

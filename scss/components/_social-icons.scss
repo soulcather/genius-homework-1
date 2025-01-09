@@ -1,0 +1,14 @@
+.social__list {
+  display: flex;
+  gap: 32px;
+  fill: var(--color-primary-blue);
+}
+
+.social__item {
+  fill: var(--color-primary-blue);
+  transition: fill 0.2s;
+}
+
+.social__item:hover {
+  fill: var(--color-brand-blue);
+}

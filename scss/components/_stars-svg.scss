@@ -1,0 +1,29 @@
+.star-top {
+  position: absolute;
+  top: 32px;
+  right: -140px;
+  animation: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.star-middle {
+  position: absolute;
+  top: 250px;
+  right: -100px;
+  animation: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.star-bot {
+  position: absolute;
+  top: 350px;
+  right: 130px;
+  animation: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

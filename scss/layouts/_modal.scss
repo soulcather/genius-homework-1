@@ -11,6 +11,12 @@
   transition: opacity 0.2s, visibility 0.2s;
 }
 
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .modal {
   position: relative;
   width: 100%;
@@ -21,13 +27,7 @@
   background-color: var(--color-primary-blue);
   background-image: url(../img/modal-bg.png);
   border-radius: 48px;
-  overflow-y: hidden;
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  overflow-y: scroll;
 }
 
 .modal-btn-close {
@@ -36,7 +36,7 @@
   right: 40px;
 }
 
-.modal-title {
+.modal__title {
   font-family: 'Play';
   font-size: 64px;
   color: var(--color-primary-light);
@@ -46,12 +46,12 @@
   margin-bottom: 8px;
 }
 
-.modal-text {
+.modal__text {
   text-align: center;
   color: var(--color-primary-light);
-  margin-bottom: 72px;
+  margin-bottom: 32px;
 }
 
-.modal-text span {
-  color: var(--color-brand-blue);
+.form__field.modal-form__field {
+  margin-bottom: 24px;
 }

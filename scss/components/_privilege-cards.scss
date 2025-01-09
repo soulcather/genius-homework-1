@@ -1,0 +1,27 @@
+.privilege-card {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 40px) / 3);
+  }
+
+  &__control {
+    padding: 24px 32px;
+    border: 1px solid black;
+    border-radius: 32px;
+    box-shadow: 1px 8px 5px 1px #a8c6f561;
+    height: 180px;
+    display: flex;
+  }
+
+  &__text {
+    color: var(--color-brand-dark);
+    text-align: center;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+  }
+}

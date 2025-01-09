@@ -1,0 +1,12 @@
+.link {
+  color: var(--color-primary-blue);
+  cursor: pointer;
+  font-family: 'Roboto';
+  line-height: 1.2;
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--color-brand-blue);
+    /* font-weight: 700; */
+  }
+}
