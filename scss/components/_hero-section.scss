@@ -1,0 +1,35 @@
+.hero-section {
+  padding: 126px 0;
+  background-image: url(../img/hero-section-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
+
+.hero-section-wrapper {
+  max-width: 410px;
+  padding: 16px 0 0 105px;
+}
+
+.hero-text {
+  margin-bottom: 16px;
+}
+
+.hero-title {
+  text-transform: capitalize;
+  color: var(--color-brand-blue);
+  font-family: 'Play';
+  font-weight: 700;
+  line-height: 0.8;
+  font-size: 140px;
+  margin-bottom: 40px;
+}
+
+.consultation-text {
+  color: #4a4a4a;
+  font-family: 'Roboto';
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 0px;
+  max-width: 250px;
+}

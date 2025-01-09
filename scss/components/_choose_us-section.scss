@@ -1,0 +1,36 @@
+.section-title.choose_us-centered {
+  text-align: center;
+  width: 450px;
+  height: 150px;
+  margin: 0 auto 50px;
+}
+
+.choose_us-container {
+  display: flex;
+}
+
+.choose_us-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.choose_us-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.choose_us-card {
+  padding: 24px 32px;
+  border: 1px solid black;
+  border-radius: 32px;
+  box-shadow: 1px 8px 5px 1px #a8c6f561;
+  height: 180px;
+  display: flex;
+}
+
+.choose_us-text {
+  color: var(--color-brand-dark);
+  text-align: center;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+}

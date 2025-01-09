@@ -1,0 +1,86 @@
+.about_us-section {
+  margin-bottom: 176px;
+}
+
+.about_us-text-wrapper {
+  max-width: 700px;
+}
+
+.section-title {
+  color: var(--color-primary-blue);
+  font-family: 'Play';
+  font-size: 64px;
+  line-height: 1.2;
+  margin-bottom: 48px;
+}
+
+.section-title span {
+  color: var(--color-brand-blue);
+}
+
+.about-us-title {
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.about_us-container {
+  display: flex;
+  gap: 40px;
+}
+
+.about_us-text {
+  font-size: 22px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.about_us-text span {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.about_us-img-wrapper {
+  position: relative;
+}
+
+.about_us-img {
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: calc(60% + 40px);
+}
+
+.about_us-img-wrapper img:first-child {
+  border-radius: 50%;
+}
+
+.star_top {
+  position: absolute;
+  top: 32px;
+  right: -140px;
+  animation: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.star_middle {
+  position: absolute;
+  top: 250px;
+  right: -100px;
+  animation: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.star_bot {
+  position: absolute;
+  top: 350px;
+  right: 130px;
+  animation: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

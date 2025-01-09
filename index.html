@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -160,19 +159,31 @@
             <ul class="procedures-list">
               <li class="procedures-item">
                 <article class="procedures-card">
-                  <!-- img -->
+                  <img
+                    class="procedures-image"
+                    src="./img/procedures_1.png"
+                    alt="Процедури"
+                  />
                   <h3 class="procedures-text">Маски для обличчя</h3>
                 </article>
               </li>
               <li class="procedures-item">
                 <article class="procedures-card">
-                  <!-- img -->
+                  <img
+                    class="procedures-image"
+                    src="./img/procedures_2.png"
+                    alt="Процедури"
+                  />
                   <h3 class="procedures-text">Маски для обличчя</h3>
                 </article>
               </li>
               <li class="procedures-item">
                 <article class="procedures-card">
-                  <!-- img -->
+                  <img
+                    class="procedures-image"
+                    src="./img/procedures_3.png"
+                    alt="Процедури"
+                  />
                   <h3 class="procedures-text">Маски для обличчя</h3>
                 </article>
               </li>
@@ -205,7 +216,7 @@
               <h3 class="location-form-title">
                 Запишіться <span>безкоштовно </span>та отримайте подарунок
               </h3>
-              <form name="modal-form" autocomplete="off" novalidate>
+              <form name="modal-form" autocomplete="off">
                 <div class="location-form-field">
                   <label class="form-label visually-hidden" for="user-name">
                     Ваше ім'я та прізвище
@@ -216,6 +227,8 @@
                     name="user-name"
                     id="user-name"
                     placeholder="Ваше ім'я та прізвище"
+                    required
+                    pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
                   />
                 </div>
 
@@ -229,6 +242,8 @@
                     name="user-tel"
                     id="user-tel"
                     placeholder="Ваш номер телефону"
+                    required
+                    pattern="^\+[0-9]{12}"
                   />
                 </div>
 
@@ -242,6 +257,7 @@
                     name="user-email"
                     id="user-email"
                     placeholder="Ваша електронна пошта"
+                    required
                   />
                 </div>
 
@@ -345,7 +361,7 @@
         <p class="modal-text">
           Запишіться <span>безкоштовно </span>та отримайте подарунок
         </p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name">
               Ваше ім'я та прізвище
@@ -356,6 +372,8 @@
               name="user-name"
               id="user-name"
               placeholder="Ваше ім'я та прізвище"
+              required
+              pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
             />
           </div>
 
@@ -369,6 +387,8 @@
               name="user-tel"
               id="user-tel"
               placeholder="Ваш номер телефону"
+              required
+              pattern="^\+[0-9]{12}"
             />
           </div>
 
@@ -382,6 +402,7 @@
               name="user-email"
               id="user-email"
               placeholder="Ваша електронна пошта"
+              required
             />
           </div>
 
