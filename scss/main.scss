@@ -1,54 +1,27 @@
-// Components
-// Button
+@import './utils/fonts';
+@import './utils/keyframes';
+@import './utils/texts';
+@import './utils/variables';
+@import './base';
+
 @import './components/buttons';
-// Carousel button
 @import './components/carousel';
-// Links
 @import './components/links';
-// Social icons
 @import './components/social-icons';
-// Stars
 @import './components/stars-svg';
-// Privilege cards
 @import './components/privilege-cards';
-// Procedures cards
 @import './components/procedures-cards';
-// Form terms
 @import './components/form-terms';
 
-// Layouts
-// Section About us
 @import './layouts/about-section';
-// Section Choose us
 @import './layouts/privilege-section';
-// Footer
 @import './layouts/footer';
-// Form
 @import './layouts/forms';
-// Header
 @import './layouts/header';
-// Hero section
 @import './layouts/hero-section';
-// Section Location
 @import './layouts/location-section';
-// Modal
+@import './layouts/mobile-menu';
 @import './layouts/modal';
-// Section Procedures
 @import './layouts/procedures-section';
-// Section
 @import './layouts/section';
-// Form section location
 @import './layouts/section-location-form';
-
-// Utils
-// Fonts
-@import './utils/fonts';
-// Keyframes
-@import './utils/keyframes';
-// Texts
-@import './utils/texts';
-// Variables
-@import './utils/variables';
-
-// Base
-@import './base';

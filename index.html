@@ -56,6 +56,16 @@
               </li>
             </ul>
           </nav>
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="24" height="24">
+              <use href="./img/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -65,7 +75,10 @@
           <div class="hero-section__container">
             <p class="hero-section__text-name">Косметологічна клініка</p>
             <h1 class="hero-section__title">beauty zone</h1>
-            <button class="button modal-btn-open" type="button">
+            <button
+              class="hero-section__button button modal-btn-open"
+              type="button"
+            >
               Замовити дзвінок
             </button>
             <p class="hero-section__text-consultation">
@@ -97,6 +110,7 @@
             </div>
             <div class="section-about__img-container">
               <img
+                class="section-about__img-item"
                 src="./img/face_1.jpg"
                 alt="Обличчя жінки під час процедур"
               />
@@ -123,7 +137,11 @@
             <ul class="privilege-card__list">
               <li class="privilege-card__item">
                 <article class="privilege-card__control">
-                  <a href="#"><!-- icon  --></a>
+                  <a class="privilege-card__img-link" href="#">
+                    <svg width="48" height="48">
+                      <use href="./img/icons.svg#icon-materials-science"></use>
+                    </svg>
+                  </a>
                   <p class="privilege-card__text">
                     Всі наші косметологи мають вищу медичну освіту та стаж
                     роботи від 5 років
@@ -132,7 +150,13 @@
               </li>
               <li class="privilege-card__item">
                 <article class="privilege-card__control">
-                  <a href="#"><!-- icon --></a>
+                  <a class="privilege-card__img-link" href="#">
+                    <svg width="48" height="48">
+                      <use
+                        href="./img/icons.svg#icon-medicinecosmeticsbottle"
+                      ></use>
+                    </svg>
+                  </a>
                   <p class="privilege-card__text">
                     Використовуємо тільки професійне обладнання та косметику,
                     перевірену часом
@@ -141,7 +165,11 @@
               </li>
               <li class="privilege-card__item">
                 <article class="privilege-card__control">
-                  <a href="#"><!-- icon --></a>
+                  <a class="privilege-card__img-link" href="#">
+                    <svg width="48" height="48">
+                      <use href="./img/icons.svg#icon-crown"></use>
+                    </svg>
+                  </a>
                   <p class="privilege-card__text">
                     Наша мета - підкреслити переваги та приховати недоліки, а не
                     переробити
@@ -152,7 +180,7 @@
           </div>
         </div>
       </section>
-      <section class="section-procedures section" id="section-procedures">
+      <!-- <section class="section-procedures section" id="section-procedures">
         <div class="container">
           <h2 class="section__title section__title--centered">
             Наші <span class="text-brand-blue">процедури</span>
@@ -202,8 +230,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="section-location section" id="section-location">
+      </section> -->
+      <!-- <section class="section-location section" id="section-location">
         <div class="container">
           <h2 class="section__title section__title--centered">
             Як нас <span class="text-brand-blue">знайти</span>
@@ -219,7 +247,7 @@
               referrerpolicy="no-referrer-when-downgrade"
             >
             </iframe>
-            <!-- Form -->
+
             <div class="section-location__form">
               <h3 class="section-location__form-title">
                 Запишіться <span class="text-brand-blue">безкоштовно </span>та
@@ -286,91 +314,109 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
-        <div class="footer-container">
-          <nav class="footer-nav">
-            <div class="footer-logo">
-              <a class="logo-link" href="#">
+        <div class="footer__container">
+          <nav class="footer__nav">
+            <div class="footer__logo">
+              <a href="#">
                 <img src="./img/logo.svg" alt="Логотип Beaty Zone" />
               </a>
             </div>
-            <ul class="footer-menu">
+            <ul class="footer__menu">
               <li>
-                <a class="address-link" href="#section-about_us">Про нас</a>
+                <a class="footer__address-link" href="#section-about"
+                  >Про нас</a
+                >
               </li>
               <li>
-                <a class="address-link" href="#section-choose_us">Чому ми</a>
+                <a class="footer__address-link" href="#section-privilege"
+                  >Чому ми</a
+                >
               </li>
               <li>
-                <a class="address-link" href="#section-procedures"
+                <a class="footer__address-link" href="#section-procedures"
                   >Наші процедури</a
                 >
               </li>
               <li>
-                <a class="address-link" href="#section-location">Контакти</a>
+                <a class="footer__address-link" href="#section-location"
+                  >Контакти</a
+                >
               </li>
             </ul>
           </nav>
-          <address class="footer-address">
-            <ul class="address-list">
-              <li>
-                <a class="address-link" href="tel:+380960000007"
-                  >+ 38 (096) 000 00 07</a
-                >
-              </li>
-              <li>
-                <a class="address-link" href="mailto:beautyzone@gmail.com"
-                  >beautyzone@gmail.com</a
-                >
-              </li>
-              <li>
-                <a
-                  class="address-link"
-                  href="https://maps.app.goo.gl/iBnq4KgNmCW5urpf8"
-                  target="_blank"
-                  >Україна, м. Київ, вул. Тараса Шевченка 5</a
-                >
-              </li>
-              <li>
+          <address class="footer__address">
+            <div class="footer__menu-container">
+              <ul class="footer__address-list">
+                <li>
+                  <a class="footer__address-link" href="tel:+380960000007"
+                    >+ 38 (096) 000 00 07</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__address-link"
+                    href="mailto:beautyzone@gmail.com"
+                    >beautyzone@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__address-link"
+                    href="https://maps.app.goo.gl/iBnq4KgNmCW5urpf8"
+                    target="_blank"
+                    >Україна, м. Київ,<br />
+                    вул. Тараса Шевченка 5</a
+                  >
+                </li>
+              </ul>
+              <div class="footer__social-icons">
                 <a href="#">
-                  <svg class="menu-icon" width="32" height="32">
+                  <svg class="footer__social-item" width="32" height="32">
                     <use href="./img/icons.svg#icon-call"></use>
                   </svg>
                 </a>
-              </li>
-              <li>
+
                 <a href="#">
-                  <svg class="menu-icon" width="32" height="32">
+                  <svg class="footer__social-item" width="32" height="32">
                     <use href="./img/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
-              </li>
-              <li>
+
                 <a href="#">
-                  <svg class="menu-icon" width="32" height="32">
+                  <svg class="footer__social-item" width="32" height="32">
                     <use href="./img/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
-              </li>
-            </ul>
-            <div class="address-info">
-              <a class="address-link" href="#" target="_blank">
+              </div>
+            </div>
+
+            <div class="footer__terms-info">
+              <a
+                class="footer__terms-link footer__address-link"
+                href="#"
+                target="_blank"
+              >
                 Політика конфіденційності
               </a>
-              <p class="address-copyright">&copy; 2022 Дані захищені</p>
+              <p class="footer__terms-copyright">&copy; 2022 Дані захищені</p>
             </div>
           </address>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Modal -->
-    <div class="backdrop is-hidden">
+    <!-- <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">Close</button>
+        <button class="modal-btn-close" type="button">
+          <svg width="16" height="16">
+            <use href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
         <h2 class="modal__title">Замовити дзвінок</h2>
         <p class="modal__text">
           Запишіться <span class="text-brand-blue">безкоштовно </span>та
@@ -430,8 +476,9 @@
           </p>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

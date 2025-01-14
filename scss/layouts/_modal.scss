@@ -9,12 +9,12 @@
   align-items: center;
   justify-content: center;
   transition: opacity 0.2s, visibility 0.2s;
-}
 
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 .modal {
@@ -27,29 +27,38 @@
   background-color: var(--color-primary-blue);
   background-image: url(../img/modal-bg.png);
   border-radius: 48px;
-  overflow-y: scroll;
-}
+  overflow-y: auto;
 
-.modal-btn-close {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-}
+  &-btn-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-color: transparent;
+    border: none;
+    fill: white;
+    cursor: pointer;
+    transition: fill 0.2s;
 
-.modal__title {
-  font-family: 'Play';
-  font-size: 64px;
-  color: var(--color-primary-light);
-  text-align: center;
-  font-weight: 700;
-  line-height: 1.15;
-  margin-bottom: 8px;
-}
+    &:hover {
+      fill: black;
+    }
+  }
 
-.modal__text {
-  text-align: center;
-  color: var(--color-primary-light);
-  margin-bottom: 32px;
+  &__title {
+    font-family: 'Play';
+    font-size: 64px;
+    color: var(--color-primary-light);
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    text-align: center;
+    color: var(--color-primary-light);
+    margin-bottom: 32px;
+  }
 }
 
 .form__field.modal-form__field {
