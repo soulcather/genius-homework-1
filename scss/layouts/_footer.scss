@@ -8,6 +8,7 @@ footer {
 
   &::after {
     content: '';
+    display: none;
     position: absolute;
     background-repeat: no-repeat;
     bottom: 0;
@@ -15,6 +16,10 @@ footer {
     background-image: url(../img/cosmetic.png);
     width: 247px;
     height: 152px;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
   }
 }
 
@@ -22,17 +27,36 @@ footer {
   &__container {
     display: flex;
     gap: 20px;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+    }
   }
 
   &__nav,
   &__address {
     flex-basis: 50%;
     display: flex;
-    gap: 186px;
+    gap: 42px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      gap: 100px;
+      align-items: stretch;
+      text-align: start;
+    }
   }
 
   &__logo,
   &__menu {
+    flex-grow: 1;
+  }
+
+  &__menu-container {
     flex-grow: 1;
   }
 
@@ -60,6 +84,14 @@ footer {
     flex-grow: 1;
   }
 
+  &__address-list {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
   &__address-list li {
     margin-bottom: 16px;
   }
@@ -71,7 +103,7 @@ footer {
   &__social-icons {
     padding-top: 18px;
     display: flex;
-    justify-content: space-around;
+    gap: 24px;
   }
 
   &__social-item {

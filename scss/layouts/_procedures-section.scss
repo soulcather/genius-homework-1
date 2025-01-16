@@ -3,6 +3,29 @@
     display: flex;
     align-items: center;
     gap: 32px;
-    justify-content: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0 -55px 0;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      margin: 0;
+    }
   }
+
+  &__list {
+    margin-bottom: 52px;
+  }
+
+  &__button {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+    }
+  }
+}
+
+.swiper-item {
+  display: flex;
+  justify-content: center;
 }
